@@ -1,0 +1,14 @@
+[
+    {
+        "question": "*1.What is the name of the largest ocean in the world?",
+        "options": [
+            {
+                "1": "Indian Ocean",
+                "2": "Arctic Ocean",
+                "3": "North Atlantic Ocean",
+                "4": "others"
+            }
+        ],
+        "selected": "1"
+    }
+]

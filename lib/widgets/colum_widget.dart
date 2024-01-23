@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:project_sample/components/textfrom_field.dart';
 
 class Columnwidget extends StatelessWidget {
-  const Columnwidget({super.key});
+  TextEditingController _answerController = TextEditingController();
+  Columnwidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,15 @@ class Columnwidget extends StatelessWidget {
           child: Text(
               "An asynchronous operation executes in a thread, separate from the main application thread?"),
         ),
-        Textfromfieldscreen(),
+        AppInputTextfieldscreen(
+          controller: _answerController,
+          validator: (value) {
+            if (value == false) {
+              return 'Required.';
+            }
+          },
+        ),
+        // Textfromfieldscreen(),
       ],
     );
   }
